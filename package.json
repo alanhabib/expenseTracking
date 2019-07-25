@@ -39,7 +39,9 @@
   },
   "scripts": {
     "dev": "parcel public/index.html",
-    "build": "parcel build public/index.html --out-dir prod"
+    "build": "parcel build public/index.html --out-dir prod",
+    "start": "node server/server.js",
+    "heroku-postbuild": "npm run build"
   },
   "keywords": [],
   "author": "",
