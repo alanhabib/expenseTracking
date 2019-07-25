@@ -1,2 +1,8 @@
 @import './base/settings';
 @import './base/base';
+
+$primary-color: pink;
+
+h1{
+  color: $primary-color;
+}
