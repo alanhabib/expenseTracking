@@ -56865,7 +56865,65 @@ var mapStateToProps = function mapStateToProps(state) {
 var _default = (0, _reactRedux.connect)(mapStateToProps)(ExpenseListFilters);
 
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","react-redux":"../node_modules/react-redux/es/index.js","react-dates":"../node_modules/react-dates/index.js","../actions/filters":"../src/actions/filters.js"}],"../src/Components/ExpenseDashboardPage.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","react-redux":"../node_modules/react-redux/es/index.js","react-dates":"../node_modules/react-dates/index.js","../actions/filters":"../src/actions/filters.js"}],"../src/selectors/expenses-total.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _default = function _default(expenses) {
+  return expenses.map(function (expense) {
+    return expense.amount;
+  }).reduce(function (sum, value) {
+    return sum + value;
+  }, 0);
+};
+
+exports.default = _default;
+},{}],"../src/Components/ExpensesSummary.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = exports.ExpensesSummary = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _reactRedux = require("react-redux");
+
+var _numeral = _interopRequireDefault(require("numeral"));
+
+var _expenses = _interopRequireDefault(require("../selectors/expenses"));
+
+var _expensesTotal = _interopRequireDefault(require("../selectors/expenses-total"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var ExpensesSummary = function ExpensesSummary(_ref) {
+  var expenseCount = _ref.expenseCount,
+      expensesTotal = _ref.expensesTotal;
+  var expenseWord = expenseCount === 1 ? "expense" : "expenses";
+  var formattedExpensesTotal = (0, _numeral.default)(expensesTotal / 100).format("$0,0.00");
+  return _react.default.createElement("h1", null, "Viewing ", expenseCount, " ", expenseWord, " totalling ", formattedExpensesTotal);
+};
+
+exports.ExpensesSummary = ExpensesSummary;
+
+var mapStateToProps = function mapStateToProps(state) {
+  var visibleExpenses = (0, _expenses.default)(state.expenses, state.filters);
+  return {
+    expenseCount: visibleExpenses.length,
+    expensesTotal: (0, _expensesTotal.default)(visibleExpenses)
+  };
+};
+
+var _default = (0, _reactRedux.connect)(mapStateToProps)(ExpensesSummary);
+
+exports.default = _default;
+},{"react":"../node_modules/react/index.js","react-redux":"../node_modules/react-redux/es/index.js","numeral":"../node_modules/numeral/numeral.js","../selectors/expenses":"../src/selectors/expenses.js","../selectors/expenses-total":"../src/selectors/expenses-total.js"}],"../src/Components/ExpenseDashboardPage.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -56879,15 +56937,17 @@ var _ExpenseList = _interopRequireDefault(require("./ExpenseList"));
 
 var _ExpenseListFilters = _interopRequireDefault(require("./ExpenseListFilters"));
 
+var _ExpensesSummary = _interopRequireDefault(require("./ExpensesSummary"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var ExpenseDashboardPage = function ExpenseDashboardPage() {
-  return _react.default.createElement("div", null, _react.default.createElement(_ExpenseListFilters.default, null), _react.default.createElement(_ExpenseList.default, null));
+  return _react.default.createElement("div", null, _react.default.createElement(_ExpensesSummary.default, null), _react.default.createElement(_ExpenseListFilters.default, null), _react.default.createElement(_ExpenseList.default, null));
 };
 
 var _default = ExpenseDashboardPage;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","./ExpenseList":"../src/Components/ExpenseList.js","./ExpenseListFilters":"../src/Components/ExpenseListFilters.js"}],"../node_modules/es-abstract/helpers/forEach.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","./ExpenseList":"../src/Components/ExpenseList.js","./ExpenseListFilters":"../src/Components/ExpenseListFilters.js","./ExpensesSummary":"../src/Components/ExpensesSummary.js"}],"../node_modules/es-abstract/helpers/forEach.js":[function(require,module,exports) {
 'use strict';
 
 module.exports = function forEach(array, callback) {
