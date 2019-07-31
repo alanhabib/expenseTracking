@@ -5,14 +5,12 @@
       <change beforePath="$PROJECT_DIR$/../Boilerplate" beforeDir="false" afterPath="$PROJECT_DIR$/../Boilerplate" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Expensify" beforeDir="false" afterPath="$PROJECT_DIR$/../Expensify" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Portfolio-test" beforeDir="false" afterPath="$PROJECT_DIR$/../Portfolio-test" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.cache/09/3d2ef9f5fa53a403f1140f0e8e8447.json" beforeDir="false" afterPath="$PROJECT_DIR$/.cache/09/3d2ef9f5fa53a403f1140f0e8e8447.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.cache/c9/6259716a679e9f9bf77e5fd85b50d1.json" beforeDir="false" afterPath="$PROJECT_DIR$/.cache/c9/6259716a679e9f9bf77e5fd85b50d1.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.cache/d2/6c9779708e7d5357012877725da1c0.json" beforeDir="false" afterPath="$PROJECT_DIR$/.cache/d2/6c9779708e7d5357012877725da1c0.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.cache/f9/8b69d90b301e6b0da63ed75c72b1ce.json" beforeDir="false" afterPath="$PROJECT_DIR$/.cache/f9/8b69d90b301e6b0da63ed75c72b1ce.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/app.581aa3f0.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/app.581aa3f0.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/app.581aa3f0.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/app.581aa3f0.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/EditExpensePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/EditExpensePage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/actions/expenses.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/expenses.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/expenses.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/expenses.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,8 +23,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/actions/expenses.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="486">
-              <caret line="32" selection-start-line="32" selection-end-line="32" />
+            <state relative-caret-position="472">
+              <caret line="39" column="10" selection-start-line="39" selection-start-column="10" selection-end-line="39" selection-end-column="10" />
               <folding>
                 <element signature="e#0#24#0" expanded="true" />
               </folding>
@@ -34,20 +32,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/reducers/expenses.js">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Components/EditExpensePage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="651">
-              <caret line="31" selection-start-line="31" selection-end-line="31" />
+            <state relative-caret-position="63">
+              <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="22" column="3" selection-start-line="22" selection-start-column="3" selection-end-line="22" selection-end-column="3" />
+            <state relative-caret-position="504">
+              <caret line="24" selection-start-line="24" selection-end-line="24" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -88,6 +86,7 @@
         <option value="$PROJECT_DIR$/src/reducers/expenses.js" />
         <option value="$PROJECT_DIR$/src/app.js" />
         <option value="$PROJECT_DIR$/src/actions/expenses.js" />
+        <option value="$PROJECT_DIR$/src/Components/EditExpensePage.js" />
       </list>
     </option>
   </component>
@@ -156,7 +155,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1564516857835" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1564609405736" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -199,18 +198,18 @@
       <option name="presentableId" value="Default" />
       <updated>1563977072512</updated>
       <workItem from="1563977075089" duration="14264000" />
-      <workItem from="1564128453613" duration="11599000" />
+      <workItem from="1564128453613" duration="14349000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25863000" />
+    <option name="totallyTimeSpent" value="28613000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-266" y="-1417" width="1286" height="1417" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.27250803" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27170417" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -253,15 +252,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="280">
           <caret line="298" column="8" selection-start-line="298" selection-start-column="8" selection-end-line="298" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Components/EditExpensePage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -413,16 +403,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/actions/expenses.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/reducers/expenses.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="651">
@@ -432,11 +412,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="22" column="3" selection-start-line="22" selection-start-column="3" selection-end-line="22" selection-end-column="3" />
+        <state relative-caret-position="504">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/actions/expenses.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="472">
+          <caret line="39" column="10" selection-start-line="39" selection-start-column="10" selection-end-line="39" selection-end-column="10" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Components/EditExpensePage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
         </state>
       </provider>
     </entry>
