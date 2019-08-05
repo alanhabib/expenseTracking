@@ -16,9 +16,10 @@ const jsx = (
 		<AppRouter/>
 	</Provider>
 );
-ReactDOM.render(jsx, document.getElementById('root'));
+
+ReactDOM.render(<p>Loading...</p>, document.getElementById('app'));
 
 store.dispatch(startSetExpenses()).then(() => {
-	ReactDOM.render(jsx, document.getElementById('root'));
+	ReactDOM.render(jsx, document.getElementById('app'));
 });
 
